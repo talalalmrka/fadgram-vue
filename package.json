@@ -40,10 +40,10 @@
     "vue-tsc": "^1.8.0"
   },
   "dependencies": {
-    "@iconify/tailwind4": ">=^1.0.6",
-    "@tailwindcss/vite": ">=^4.1.4",
-    "fadgram-ui": ">=^0.4.7",
-    "tailwindcss": ">=^4.1.4",
-    "vue": ">=^3.5.13"
+    "@iconify/tailwind4": "^1.0.6",
+    "@tailwindcss/vite": "^4.1.4",
+    "fadgram-ui": "^0.4.7",
+    "tailwindcss": "^4.1.4",
+    "vue": "^3.5.13"
   }
 }
