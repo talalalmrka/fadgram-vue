@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref, watch, computed } from 'vue';
-import FgLabel from './FgLabel.vue';
 import FgInfo from './FgInfo.vue';
 import FgError from './FgError.vue';
 defineOptions({ inheritAttrs: false });
@@ -34,7 +33,7 @@ function update(val: boolean) {
 <template>
   <label :for="fieldId" class="form-switch" :class="{ 'error': error }">
     <input ref="toggleRef" v-bind="$attrs" type="checkbox" :id="fieldId" :checked="innerValue" :disabled="disabled"
-      @change="update($event.target.checked)" />
+      @change="update(($event.target as HTMLInputElement).checked)" />
     <span class="toggle-slider"></span>
     <span class="form-switch-label" :class="{ 'flex-space-2': isFlex }">
       <i v-if="icon" class="icon" :class="icon"></i>

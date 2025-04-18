@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue';
-import FgLabel from './FgLabel.vue';
 import FgInfo from './FgInfo.vue';
 import FgError from './FgError.vue';
 defineOptions({ inheritAttrs: false });
@@ -30,9 +29,6 @@ watch(() => props.modelValue, val => innerValue.value = val ?? null);
 function update(val: string | number) {
   emits('update:modelValue', val);
 }
-const radioId = (i) => {
-  return fieldId + '-' + i;
-}
 </script>
 
 <template>
@@ -43,9 +39,9 @@ const radioId = (i) => {
     </legend>
     <div v-for="opt in options" :key="opt.value" class="form-radio"
       :class="opt.disabled ? 'opacity-50 cursor-not-allowed' : ''">
-      <input ref="radioRef" v-bind="$attrs" :id="radioId(opt.value)" type="radio" :name="fieldId" :value="opt.value"
+      <input ref="radioRef" v-bind="$attrs" :id="fieldId + '-' + opt.value" type="radio" :name="fieldId" :value="opt.value"
         :checked="opt.value === innerValue" :disabled="opt.disabled" @change="update(opt.value)" />
-      <label :for="radioId(opt.value)" class="form-label">{{ opt.label }}</label>
+      <label :for="fieldId + '-' + opt.value" class="form-label">{{ opt.label }}</label>
     </div>
   </fieldset>
   <FgInfo :info="info" />

@@ -7,7 +7,7 @@ defineOptions({ inheritAttrs: false });
 
 const props = defineProps<{
     id?: string;
-    icon?: string | null;
+    icon?: string;
     label?: string;
     info?: string;
     error?: string;

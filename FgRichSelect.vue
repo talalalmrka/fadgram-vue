@@ -4,7 +4,6 @@ import FgLabel from './FgLabel.vue';
 import FgInfo from './FgInfo.vue';
 import FgError from './FgError.vue';
 import FgInput from './FgInput.vue';
-//import { ChevronDownIcon, XIcon } from '@heroicons/vue/solid';
 defineOptions({ inheritAttrs: false });
 
 interface Option { value: string | number; label: string; icon?: string; disabled?: boolean }
@@ -37,10 +36,7 @@ const props = withDefaults(defineProps<{
   noResults?: string;
 }>(), {
   id: undefined,
-  icon: null,
-  label: null,
-  info: null,
-  error: null,
+
   options: () => [],
   modelValue: null,
   placeholder: 'Select an option',

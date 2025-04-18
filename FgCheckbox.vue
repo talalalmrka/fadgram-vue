@@ -7,7 +7,7 @@ defineOptions({ inheritAttrs: false });
 
 const props = defineProps<{
   id?: string;
-  icon?: string | null;
+  icon?: string;
   label?: string;
   info?: string;
   error?: string;
@@ -33,7 +33,7 @@ function update(val: boolean) {
 <template>
   <div class="form-check" :class="{ 'error': error }">
     <input ref="checkboxRef" v-bind="$attrs" type="checkbox" :id="fieldId" :checked="innerValue" :disabled="disabled"
-      @change="update($event.target.checked)" />
+      @change="update(($event.currentTarget as HTMLInputElement).checked)" />
     <FgLabel :icon="icon" :label="label" :error="error" :for="fieldId" />
   </div>
   <FgInfo :info="info" />

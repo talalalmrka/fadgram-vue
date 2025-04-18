@@ -8,7 +8,7 @@ defineOptions({ inheritAttrs: false });
 interface Option { value: string | number; label: string; icon?: string; disabled?: boolean }
 const props = defineProps<{
   id?: string;
-  icon?: string | null;
+  icon?: string;
   label?: string;
   info?: string;
   error?: string;
@@ -38,7 +38,7 @@ function update(val: string | number | null) {
   <div class="mb-4">
     <FgLabel :icon="icon" :label="label" :error="error" :for="selectId" />
     <select ref="selectRef" v-bind="$attrs" :id="selectId" v-model="innerValue" class="form-select"
-      :class="error ? 'error' : ''" @change="update($event.target.value)">
+      :class="error ? 'error' : ''" @change="update(($event.target as HTMLInputElement).value)">
       <option v-if="placeholder" :value="null">{{ placeholder }}</option>
       <option v-for="opt in options" :key="opt.value" :value="opt.value" :disabled="opt.disabled">
         <i v-if="opt.icon" class="icon" :class="opt.icon"></i> {{ opt.label }}

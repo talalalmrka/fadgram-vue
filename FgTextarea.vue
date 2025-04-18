@@ -7,13 +7,13 @@ defineOptions({ inheritAttrs: false });
 
 const props = defineProps<{
   id?: string;
-  icon?: string | null;
+  icon?: string;
   label?: string;
   info?: string;
   error?: string;
   modelValue?: string;
   placeholder?: string;
-  rows?: strng | number;
+  rows?: string | number;
   disabled?: boolean;
 }>();
 const emits = defineEmits<{
@@ -36,7 +36,7 @@ function update(val: string) {
   <FgLabel :icon="icon" :label="label" :error="error" :for="fieldId" />
   <textarea ref="textareaRef" v-bind="$attrs" :id="fieldId" v-model="innerValue" :placeholder="placeholder" :rows="rows"
     :disabled="disabled" class="form-control" :class="error ? 'error' : ''"
-    @input="update($event.target.value)"></textarea>
+    @input="update(($event.target as HTMLInputElement).value)"></textarea>
   <FgInfo :info="info" />
   <FgError :error="error" />
 
