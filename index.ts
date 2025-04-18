@@ -1,3 +1,4 @@
+export { default as FgAlert } from './FgAlert.vue';
 export { default as FgCheckbox } from './FgCheckbox.vue';
 export { default as FgError } from './FgError.vue';
 export { default as FgInfo } from './FgInfo.vue';
