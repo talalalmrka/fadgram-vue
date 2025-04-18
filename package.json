@@ -1,0 +1,49 @@
+{
+  "name": "fadgram-vue",
+  "version": "1.0.0",
+  "description": "Reuseable tailwind css vue components by fadgram",
+  "keywords": [
+    "vue",
+    "vue3",
+    "vue-components",
+    "fadgram-ui",
+    "fadgram-vue"
+  ],
+  "homepage": "https://github.com/talalalmrka/fadgram-vue#readme",
+  "bugs": {
+    "url": "https://github.com/talalalmrka/fadgram-vue/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talalalmrka/fadgram-vue.git"
+  },
+  "license": "MIT",
+  "author": "Talal Almrka",
+  "type": "module",
+  "main": "index.ts",
+  "files": [
+    "**/*.vue",
+    "**/*.ts",
+    "types"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "typescript": "^5.8.3",
+    "vite": "^5.0.0",
+    "vue": "^3.5.13",
+    "vue-tsc": "^1.8.0"
+  },
+  "dependencies": {
+    "@iconify/tailwind4": ">=^1.0.6",
+    "@tailwindcss/vite": ">=^4.1.4",
+    "fadgram-ui": ">=^0.4.7",
+    "tailwindcss": ">=^4.1.4",
+    "vue": ">=^3.5.13"
+  }
+}
