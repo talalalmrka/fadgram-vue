@@ -1,0 +1,5 @@
+import "/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/node_modules/@vuepress/highlighter-helper/lib/client/styles/base.css"
+import "/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/node_modules/@vuepress/plugin-shiki/lib/client/styles/shiki.css"
+import "/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/node_modules/@vuepress/highlighter-helper/lib/client/styles/line-numbers.css"
+import "/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/node_modules/@vuepress/highlighter-helper/lib/client/styles/notation-highlight.css"
+import "/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/node_modules/@vuepress/highlighter-helper/lib/client/styles/code-block-title.css"
