@@ -9,18 +9,19 @@ export default defineUserConfig({
   title: 'Fadgram Vue',
   description: 'Vue 3 components library with powerfull features compatible with tailwind css 4',
   pagePatterns: ['**/*.md', '!**/*.snippet.md', '!.vuepress', '!node_modules'],
+  base: '/fadgram-vue/', // 👈 VERY IMPORTANT
   head: [
     [
       'link',
       {
-        href: 'fonts/poppins/style.css',
+        href: '/fonts/poppins/style.css',
         rel: 'stylesheet',
       },
     ],
   ],
   theme: hopeTheme({
-    logo: 'images/logo.png',
-    favicon: 'images/logo.png',
+    logo: '/images/logo.png',
+    favicon: '/images/logo.png',
     externalLinkIcon: false,
     repo: 'talalalmrka/fadgram-vue',
     pageInfo: ['Author', 'Category', 'Tag'],
