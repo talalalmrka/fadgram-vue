@@ -142,6 +142,7 @@ export default defineUserConfig({
   }),
   bundler: viteBundler({
     viteOptions: {
+      base: '/fadgram-vue/',
       plugins: [tailwindcss()],
       resolve: {
         alias: {
