@@ -30,6 +30,11 @@ export default defineUserConfig({
       codeTabs: true,
       tabs: true,
     },
+plugins:{
+    copyCode:{
+showInMobile: true,
+},
+},
 code: {
       copy: {
         showInMobile: true, // Force show copy button on mobile
