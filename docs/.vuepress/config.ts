@@ -30,6 +30,12 @@ export default defineUserConfig({
       codeTabs: true,
       tabs: true,
     },
+code: {
+      copy: {
+        showInMobile: true, // Force show copy button on mobile
+        duration: 2000,    // Success feedback duration (optional)
+      }
+    },
     navbar: [
       {
         text: 'Home',
