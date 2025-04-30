@@ -13,14 +13,14 @@ export default defineUserConfig({
     [
       'link',
       {
-        href: '/fonts/poppins/style.css',
+        href: 'fonts/poppins/style.css',
         rel: 'stylesheet',
       },
     ],
   ],
   theme: hopeTheme({
-    logo: '/images/logo.png',
-    favicon: '/images/logo.png',
+    logo: 'images/logo.png',
+    favicon: 'images/logo.png',
     externalLinkIcon: false,
     repo: 'talalalmrka/fadgram-vue',
     pageInfo: ['Author', 'Category', 'Tag'],
