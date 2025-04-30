@@ -2,12 +2,42 @@
 <h2 id="installation" tabindex="-1"><a class="header-anchor" href="#installation"><span>Installation</span></a></h2>
 <div class="language-ts line-numbers-mode" data-highlighter="shiki" data-ext="ts" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">import</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> { </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">FgAccordion</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">FgAccordionItem</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">FgAccordionHead</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">FgAccordionBody</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> } </span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">from</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> 'fadgram-vue'</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2 id="props" tabindex="-1"><a class="header-anchor" href="#props"><span>Props</span></a></h2>
-<ul>
-<li><code v-pre>mode: string</code> — (single, multiple) default single</li>
-<li><code v-pre>multiple: boolean</code> — default false</li>
-<li><code v-pre>storageKey: string</code> — (to store acccordion state in local storage)default fg-accordion</li>
-<li><code v-pre>persist: boolean</code> - default true</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Prop</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mode</td>
+<td><code v-pre>single | multiple</code></td>
+<td><code v-pre>single</code></td>
+<td>Controls open behavior: one or many items can be open.</td>
+</tr>
+<tr>
+<td>multiple</td>
+<td><code v-pre>boolean</code></td>
+<td><code v-pre>false</code></td>
+<td>Alternative to <code v-pre>mode</code> if <code v-pre>true</code>, forces <code v-pre>multiple</code> mode.</td>
+</tr>
+<tr>
+<td>storageKey</td>
+<td><code v-pre>string</code></td>
+<td><code v-pre>fg-accordion</code></td>
+<td>Key used in <code v-pre>localStorage</code> for persisting open state.</td>
+</tr>
+<tr>
+<td>persist</td>
+<td><code v-pre>boolean</code></td>
+<td><code v-pre>true</code></td>
+<td>If <code v-pre>true</code>, open state is saved/restored from <code v-pre>localStorage</code>.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="available-components" tabindex="-1"><a class="header-anchor" href="#available-components"><span>Available components</span></a></h2>
 <ul>
 <li><code v-pre>FgAccordion</code></li>
@@ -16,7 +46,7 @@
 <li><code v-pre>FgAccordionBody</code></li>
 </ul>
 <h2 id="basic-example" tabindex="-1"><a class="header-anchor" href="#basic-example"><span>Basic Example</span></a></h2>
-<Tabs id="60" :data='[{"id":"Preview"},{"id":"vue"}]' :active="0">
+<Tabs id="114" :data='[{"id":"Preview"},{"id":"vue"}]' :active="0">
 <template #title0="{ value, isActive }">Preview</template>
 <template #title1="{ value, isActive }">vue</template>
 <template #tab0="{ value, isActive }">
@@ -79,7 +109,7 @@
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></template>
 </Tabs>
 <h2 id="multiple" tabindex="-1"><a class="header-anchor" href="#multiple"><span>Multiple</span></a></h2>
-<Tabs id="71" :data='[{"id":"Preview"},{"id":"vue"}]' :active="0">
+<Tabs id="125" :data='[{"id":"Preview"},{"id":"vue"}]' :active="0">
 <template #title0="{ value, isActive }">Preview</template>
 <template #title1="{ value, isActive }">vue</template>
 <template #tab0="{ value, isActive }">
@@ -146,7 +176,7 @@
 <p class="hint-container-title">Tips</p>
 <p>This accordion will remember the opened items using <code v-pre>storageKey</code> to see the feature open an item and refresh the page</p>
 </div>
-<Tabs id="87" :data='[{"id":"Preview"},{"id":"vue"}]' :active="0">
+<Tabs id="141" :data='[{"id":"Preview"},{"id":"vue"}]' :active="0">
 <template #title0="{ value, isActive }">Preview</template>
 <template #title1="{ value, isActive }">vue</template>
 <template #tab0="{ value, isActive }">
@@ -210,18 +240,47 @@
 </Tabs>
 <h2 id="accordion-item" tabindex="-1"><a class="header-anchor" href="#accordion-item"><span>Accordion Item</span></a></h2>
 <h3 id="props-1" tabindex="-1"><a class="header-anchor" href="#props-1"><span>Props</span></a></h3>
-<ul>
-<li><code v-pre>id?: string</code></li>
-<li><code v-pre>title?: string</code> — if setted you dont need to add FgAccordionHead it will automatically include it</li>
-<li><code v-pre>icon?: string</code> — bootstrap icon name to display it before title like (bi-star, bi-house-fill ...etc)</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Prop</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>No</td>
+<td>auto-generated</td>
+<td>Unique ID for the accordion item.</td>
+</tr>
+<tr>
+<td>title</td>
+<td>string</td>
+<td>No</td>
+<td><code v-pre>undefined</code></td>
+<td>Title text shown in the accordion head.</td>
+</tr>
+<tr>
+<td>icon</td>
+<td>string</td>
+<td>No</td>
+<td><code v-pre>undefined</code></td>
+<td>Optional icon name to show beside the title.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="shortness-accordion-item-head" tabindex="-1"><a class="header-anchor" href="#shortness-accordion-item-head"><span>Shortness accordion item head</span></a></h3>
 <div class="hint-container tip">
 <p class="hint-container-title">Tips</p>
 <p>you can add the title and title icon directly to the accordion item and it will create accordion head automatically</p>
 </div>
 <h3 id="example" tabindex="-1"><a class="header-anchor" href="#example"><span>Example</span></a></h3>
-<Tabs id="129" :data='[{"id":"Preview"},{"id":"vue"}]' :active="0">
+<Tabs id="240" :data='[{"id":"Preview"},{"id":"vue"}]' :active="0">
 <template #title0="{ value, isActive }">Preview</template>
 <template #title1="{ value, isActive }">vue</template>
 <template #tab0="{ value, isActive }">

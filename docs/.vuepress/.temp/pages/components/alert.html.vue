@@ -2,24 +2,119 @@
 <h2 id="installation" tabindex="-1"><a class="header-anchor" href="#installation"><span>installation</span></a></h2>
 <div class="language-ts line-numbers-mode" data-highlighter="shiki" data-ext="ts" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">import</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> { </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">FgAlert</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> } </span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">from</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> 'fadgram-vue'</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2 id="props" tabindex="-1"><a class="header-anchor" href="#props"><span>Props</span></a></h2>
-<ul>
-<li><code v-pre>class: string</code> - (css class names) default null</li>
-<li><code v-pre>atts:  Object</code> - of html attributes default: () =&gt; ({})</li>
-<li><code v-pre>type: 'success' | 'error' | 'info' | 'warning'</code> - default info</li>
-<li><code v-pre>soft: boolean</code> - default false</li>
-<li><code v-pre>outline: boolean</code> - default false</li>
-<li><code v-pre>success: boolean</code> - default false</li>
-<li><code v-pre>info: boolean</code> - default false</li>
-<li><code v-pre>warning: boolean</code> - default false</li>
-<li><code v-pre>error: boolean</code> - default false</li>
-<li><code v-pre>size: 'xs' | 'sm' | 'lg' | 'xl' | 'xxl'</code> - default null</li>
-<li><code v-pre>icon: string</code> — bootstrap icon name like (bi-star, bi-house-fill ...etc)</li>
-<li><code v-pre>iconClass: string</code> — additional css classes for icon</li>
-<li><code v-pre>content: string</code></li>
-<li><code v-pre>hideIcon: boolean</code> - set true to hide icon</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Prop</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>class</td>
+<td>string</td>
+<td>No</td>
+<td><code v-pre>null</code></td>
+<td>Additional CSS classes for the alert container.</td>
+</tr>
+<tr>
+<td>atts</td>
+<td>object</td>
+<td>No</td>
+<td><code v-pre>{}</code></td>
+<td>Extra HTML attributes to bind to the root element.</td>
+</tr>
+<tr>
+<td>type</td>
+<td>AlertType (string)</td>
+<td>No</td>
+<td><code v-pre>'info'</code></td>
+<td>Alert type (e.g., <code v-pre>info</code>, <code v-pre>success</code>, <code v-pre>error</code>, etc.).</td>
+</tr>
+<tr>
+<td>soft</td>
+<td>boolean</td>
+<td>No</td>
+<td><code v-pre>false</code></td>
+<td>Applies a soft background style.</td>
+</tr>
+<tr>
+<td>outline</td>
+<td>boolean</td>
+<td>No</td>
+<td><code v-pre>false</code></td>
+<td>Applies an outlined border style.</td>
+</tr>
+<tr>
+<td>success</td>
+<td>boolean</td>
+<td>No</td>
+<td><code v-pre>false</code></td>
+<td>Shortcut to set <code v-pre>type</code> to <code v-pre>success</code>. Overrides <code v-pre>type</code> prop.</td>
+</tr>
+<tr>
+<td>info</td>
+<td>boolean</td>
+<td>No</td>
+<td><code v-pre>false</code></td>
+<td>Shortcut to set <code v-pre>type</code> to <code v-pre>info</code>. Overrides <code v-pre>type</code> prop.</td>
+</tr>
+<tr>
+<td>warning</td>
+<td>boolean</td>
+<td>No</td>
+<td><code v-pre>false</code></td>
+<td>Shortcut to set <code v-pre>type</code> to <code v-pre>warning</code>. Overrides <code v-pre>type</code> prop.</td>
+</tr>
+<tr>
+<td>error</td>
+<td>boolean</td>
+<td>No</td>
+<td><code v-pre>false</code></td>
+<td>Shortcut to set <code v-pre>type</code> to <code v-pre>error</code>. Overrides <code v-pre>type</code> prop.</td>
+</tr>
+<tr>
+<td>size</td>
+<td>string</td>
+<td>No</td>
+<td><code v-pre>null</code></td>
+<td>Optional size class (e.g., <code v-pre>text-sm</code>, <code v-pre>text-lg</code>, etc.).</td>
+</tr>
+<tr>
+<td>icon</td>
+<td>string</td>
+<td>No</td>
+<td><code v-pre>null</code></td>
+<td>Custom icon class name (overrides the default type-based icon).</td>
+</tr>
+<tr>
+<td>iconClass</td>
+<td>string</td>
+<td>No</td>
+<td><code v-pre>null</code></td>
+<td>Additional classes to apply to the icon.</td>
+</tr>
+<tr>
+<td>content</td>
+<td>string</td>
+<td>No</td>
+<td><code v-pre>null</code></td>
+<td>Content shown when no slot is used. Rendered using <code v-pre>v-html</code>.</td>
+</tr>
+<tr>
+<td>hideIcon</td>
+<td>boolean</td>
+<td>No</td>
+<td><code v-pre>false</code></td>
+<td>If <code v-pre>true</code>, no icon is shown, even if <code v-pre>type</code> or icon is provided.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="basic-usage" tabindex="-1"><a class="header-anchor" href="#basic-usage"><span>Basic usage</span></a></h2>
-<Tabs id="86" :data='[{"id":"Preview"},{"id":"vue"}]' :active="0">
+<Tabs id="275" :data='[{"id":"Preview"},{"id":"vue"}]' :active="0">
 <template #title0="{ value, isActive }">Preview</template>
 <template #title1="{ value, isActive }">vue</template>
 <template #tab0="{ value, isActive }">
@@ -29,7 +124,7 @@
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></template>
 </Tabs>
 <h2 id="types" tabindex="-1"><a class="header-anchor" href="#types"><span>Types</span></a></h2>
-<Tabs id="98" :data='[{"id":"Preview"},{"id":"vue"}]' :active="0">
+<Tabs id="287" :data='[{"id":"Preview"},{"id":"vue"}]' :active="0">
 <template #title0="{ value, isActive }">Preview</template>
 <template #title1="{ value, isActive }">vue</template>
 <template #tab0="{ value, isActive }">
@@ -48,7 +143,7 @@
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></template>
 </Tabs>
 <h2 id="variants" tabindex="-1"><a class="header-anchor" href="#variants"><span>Variants</span></a></h2>
-<Tabs id="109" :data='[{"id":"Preview"},{"id":"vue"}]' :active="0">
+<Tabs id="298" :data='[{"id":"Preview"},{"id":"vue"}]' :active="0">
 <template #title0="{ value, isActive }">Preview</template>
 <template #title1="{ value, isActive }">vue</template>
 <template #tab0="{ value, isActive }">
@@ -78,7 +173,7 @@
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></template>
 </Tabs>
 <h2 id="sizes" tabindex="-1"><a class="header-anchor" href="#sizes"><span>Sizes</span></a></h2>
-<Tabs id="157" :data='[{"id":"Preview"},{"id":"vue"}]' :active="0">
+<Tabs id="346" :data='[{"id":"Preview"},{"id":"vue"}]' :active="0">
 <template #title0="{ value, isActive }">Preview</template>
 <template #title1="{ value, isActive }">vue</template>
 <template #tab0="{ value, isActive }">

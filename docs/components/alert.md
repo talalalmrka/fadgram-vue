@@ -12,20 +12,22 @@ import { FgAlert } from 'fadgram-vue'
 
 ## Props
 
-- `class: string` - (css class names) default null
-- `atts:  Object` - of html attributes default: () => ({})
-- `type: 'success' | 'error' | 'info' | 'warning'` - default info
-- `soft: boolean` - default false
-- `outline: boolean` - default false
-- `success: boolean` - default false
-- `info: boolean` - default false
-- `warning: boolean` - default false
-- `error: boolean` - default false
-- `size: 'xs' | 'sm' | 'lg' | 'xl' | 'xxl'` - default null
-- `icon: string` — bootstrap icon name like (bi-star, bi-house-fill ...etc)
-- `iconClass: string` — additional css classes for icon
-- `content: string`
-- `hideIcon: boolean` - set true to hide icon
+| Prop      | Type               | Required | Default  | Description                                                      |
+| --------- | ------------------ | -------- | -------- | ---------------------------------------------------------------- |
+| class     | string             | No       | `null`   | Additional CSS classes for the alert container.                  |
+| atts      | object             | No       | `{}`     | Extra HTML attributes to bind to the root element.               |
+| type      | AlertType (string) | No       | `'info'` | Alert type (e.g., `info`, `success`, `error`, etc.).             |
+| soft      | boolean            | No       | `false`  | Applies a soft background style.                                 |
+| outline   | boolean            | No       | `false`  | Applies an outlined border style.                                |
+| success   | boolean            | No       | `false`  | Shortcut to set `type` to `success`. Overrides `type` prop.      |
+| info      | boolean            | No       | `false`  | Shortcut to set `type` to `info`. Overrides `type` prop.         |
+| warning   | boolean            | No       | `false`  | Shortcut to set `type` to `warning`. Overrides `type` prop.      |
+| error     | boolean            | No       | `false`  | Shortcut to set `type` to `error`. Overrides `type` prop.        |
+| size      | string             | No       | `null`   | Optional size class (e.g., `text-sm`, `text-lg`, etc.).          |
+| icon      | string             | No       | `null`   | Custom icon class name (overrides the default type-based icon).  |
+| iconClass | string             | No       | `null`   | Additional classes to apply to the icon.                         |
+| content   | string             | No       | `null`   | Content shown when no slot is used. Rendered using `v-html`.     |
+| hideIcon  | boolean            | No       | `false`  | If `true`, no icon is shown, even if `type` or icon is provided. |
 
 ## Basic usage
 

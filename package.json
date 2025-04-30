@@ -1,8 +1,34 @@
 {
-  "name": "fadgram-vue-vuepress",
-  "version": "0.0.0",
+  "name": "fadgram-vue",
+  "version": "1.1.8",
   "private": true,
   "type": "module",
+  "description": "Creative UI components for Vue 3 styled with Tailwind CSS 4 & fadgram ui by Fadgram",
+  "keywords": [
+    "vue",
+    "ui",
+    "fadgram",
+    "fadgram-vue",
+    "tailwind4-vue",
+    "vue-components"
+  ],
+  "author": {
+    "name": "Talal Almrka",
+    "email": "talalminfo@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/talalalmrka/fadgram-vue"
+  },
+  "homepage": "https://talalalmrka.github.io/fadgram-vue",
+  "main": "dist/fadgram-vue.umd.js",
+  "module": "dist/fadgram-vue.es.js",
+  "files": [
+    "dist",
+    "types",
+    "README.md"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
@@ -24,8 +50,7 @@
     "@vueuse/components": "^13.1.0",
     "fadgram-ui": "^0.5.0",
     "tailwindcss": "^4.1.4",
-    "vue": "^3.5.13",
-    "vuepress-theme-hope": "^2.0.0-rc.83"
+    "vue": "^3.5.13"
   },
   "devDependencies": {
     "@tsconfig/node22": "^22.0.1",
@@ -37,7 +62,7 @@
     "@vue/tsconfig": "^0.7.0",
     "@vuepress/bundler-vite": "^2.0.0-rc.22",
     "@vuepress/plugin-markdown-include": "^2.0.0-rc.98",
-    "@vuepress/theme-default": "^2.0.0-rc.98",
+    "vuepress-theme-hope": "^2.0.0-rc.83",
     "eslint": "^9.22.0",
     "eslint-plugin-oxlint": "^0.16.0",
     "eslint-plugin-vue": "~10.0.0",

@@ -1,13 +1,13 @@
-import { Layout, NotFound, injectDarkMode, setupDarkMode, setupSidebarItems, scrollPromise } from "/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/node_modules/vuepress-theme-hope/lib/bundle/export.js";
+import { Layout, NotFound, injectDarkMode, setupDarkMode, setupSidebarItems, scrollPromise } from "/Users/user/Desktop/laravel-projects/fadgram-vue/node_modules/vuepress-theme-hope/lib/bundle/export.js";
 
-import { defineCatalogInfoGetter } from "/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/node_modules/@vuepress/plugin-catalog/lib/client/index.js"
+import { defineCatalogInfoGetter } from "/Users/user/Desktop/laravel-projects/fadgram-vue/node_modules/@vuepress/plugin-catalog/lib/client/index.js"
 import { h } from "vue"
 import { resolveComponent } from "vue"
 
-import "/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/node_modules/@vuepress/helper/lib/client/styles/colors.css";
-import "/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/node_modules/@vuepress/helper/lib/client/styles/normalize.css";
-import "/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/node_modules/@vuepress/helper/lib/client/styles/sr-only.css";
-import "/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/node_modules/vuepress-theme-hope/lib/bundle/styles/all.scss";
+import "/Users/user/Desktop/laravel-projects/fadgram-vue/node_modules/@vuepress/helper/lib/client/styles/colors.css";
+import "/Users/user/Desktop/laravel-projects/fadgram-vue/node_modules/@vuepress/helper/lib/client/styles/normalize.css";
+import "/Users/user/Desktop/laravel-projects/fadgram-vue/node_modules/@vuepress/helper/lib/client/styles/sr-only.css";
+import "/Users/user/Desktop/laravel-projects/fadgram-vue/node_modules/vuepress-theme-hope/lib/bundle/styles/all.scss";
 
 defineCatalogInfoGetter((meta) => {
   const title = meta.title;

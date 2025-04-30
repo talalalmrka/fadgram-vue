@@ -8,10 +8,12 @@ import { FgAccordion, FgAccordionItem, FgAccordionHead, FgAccordionBody } from '
 
 ## Props
 
-- `mode: string` — (single, multiple) default single
-- `multiple: boolean` — default false
-- `storageKey: string` — (to store acccordion state in local storage)default fg-accordion
-- `persist: boolean` - default true
+| Prop       | Type                 | Default        | Description                                                  |
+| ---------- | -------------------- | -------------- | ------------------------------------------------------------ |
+| mode       | `single \| multiple` | `single`       | Controls open behavior: one or many items can be open.       |
+| multiple   | `boolean`            | `false`        | Alternative to `mode` if `true`, forces `multiple` mode.     |
+| storageKey | `string`             | `fg-accordion` | Key used in `localStorage` for persisting open state.        |
+| persist    | `boolean`            | `true`         | If `true`, open state is saved/restored from `localStorage`. |
 
 ## Available components
 
@@ -232,9 +234,11 @@ This accordion will remember the opened items using `storageKey` to see the feat
 
 ### Props
 
-- `id?: string`
-- `title?: string` — if setted you dont need to add FgAccordionHead it will automatically include it
-- `icon?: string` — bootstrap icon name to display it before title like (bi-star, bi-house-fill ...etc)
+| Prop  | Type   | Required | Default        | Description                                  |
+| ----- | ------ | -------- | -------------- | -------------------------------------------- |
+| id    | string | No       | auto-generated | Unique ID for the accordion item.            |
+| title | string | No       | `undefined`    | Title text shown in the accordion head.      |
+| icon  | string | No       | `undefined`    | Optional icon name to show beside the title. |
 
 ### Shortness accordion item head
 

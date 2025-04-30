@@ -1,22 +1,23 @@
-import * as clientConfig0 from '/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/docs/.vuepress/.temp/shiki/config.js'
-import * as clientConfig1 from '/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/docs/.vuepress/.temp/sass-palette/load-hope.js'
-import * as clientConfig2 from '/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/docs/.vuepress/.temp/markdown-ext/config.js'
-import * as clientConfig3 from '/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/node_modules/@vuepress/plugin-markdown-hint/lib/client/config.js'
-import * as clientConfig4 from '/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/docs/.vuepress/.temp/markdown-tab/config.js'
-import * as clientConfig5 from '/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/docs/.vuepress/.temp/markdown-image/client.js'
-import * as clientConfig6 from '/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/docs/.vuepress/.temp/markdown-stylize/config.js'
-import * as clientConfig7 from '/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/node_modules/@vuepress/plugin-theme-data/lib/client/config.js'
-import * as clientConfig8 from '/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/node_modules/@vuepress/plugin-back-to-top/lib/client/config.js'
-import * as clientConfig9 from '/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/node_modules/@vuepress/plugin-copy-code/lib/client/config.js'
-import * as clientConfig10 from '/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/docs/.vuepress/.temp/icon/config.js'
-import * as clientConfig11 from '/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/node_modules/@vuepress/plugin-photo-swipe/lib/client/config.js'
-import * as clientConfig12 from '/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/docs/.vuepress/.temp/components/config.js'
-import * as clientConfig13 from '/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/node_modules/@vuepress/plugin-active-header-links/lib/client/config.js'
-import * as clientConfig14 from '/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/node_modules/@vuepress/plugin-catalog/lib/client/config.js'
-import * as clientConfig15 from '/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/node_modules/@vuepress/plugin-nprogress/lib/client/config.js'
-import * as clientConfig16 from '/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/node_modules/@vuepress/plugin-redirect/lib/client/config.js'
-import * as clientConfig17 from '/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/docs/.vuepress/.temp/theme-hope/config.js'
-import * as clientConfig18 from '/Users/user/Desktop/laravel-projects/fadgram-vue-vuepress/docs/.vuepress/client.ts'
+import * as clientConfig0 from '/Users/user/Desktop/laravel-projects/fadgram-vue/docs/.vuepress/.temp/git/config.js'
+import * as clientConfig1 from '/Users/user/Desktop/laravel-projects/fadgram-vue/docs/.vuepress/.temp/shiki/config.js'
+import * as clientConfig2 from '/Users/user/Desktop/laravel-projects/fadgram-vue/docs/.vuepress/.temp/sass-palette/load-hope.js'
+import * as clientConfig3 from '/Users/user/Desktop/laravel-projects/fadgram-vue/docs/.vuepress/.temp/markdown-ext/config.js'
+import * as clientConfig4 from '/Users/user/Desktop/laravel-projects/fadgram-vue/node_modules/@vuepress/plugin-markdown-hint/lib/client/config.js'
+import * as clientConfig5 from '/Users/user/Desktop/laravel-projects/fadgram-vue/docs/.vuepress/.temp/markdown-tab/config.js'
+import * as clientConfig6 from '/Users/user/Desktop/laravel-projects/fadgram-vue/docs/.vuepress/.temp/markdown-image/client.js'
+import * as clientConfig7 from '/Users/user/Desktop/laravel-projects/fadgram-vue/docs/.vuepress/.temp/markdown-stylize/config.js'
+import * as clientConfig8 from '/Users/user/Desktop/laravel-projects/fadgram-vue/node_modules/@vuepress/plugin-theme-data/lib/client/config.js'
+import * as clientConfig9 from '/Users/user/Desktop/laravel-projects/fadgram-vue/node_modules/@vuepress/plugin-back-to-top/lib/client/config.js'
+import * as clientConfig10 from '/Users/user/Desktop/laravel-projects/fadgram-vue/node_modules/@vuepress/plugin-copy-code/lib/client/config.js'
+import * as clientConfig11 from '/Users/user/Desktop/laravel-projects/fadgram-vue/docs/.vuepress/.temp/icon/config.js'
+import * as clientConfig12 from '/Users/user/Desktop/laravel-projects/fadgram-vue/node_modules/@vuepress/plugin-photo-swipe/lib/client/config.js'
+import * as clientConfig13 from '/Users/user/Desktop/laravel-projects/fadgram-vue/docs/.vuepress/.temp/components/config.js'
+import * as clientConfig14 from '/Users/user/Desktop/laravel-projects/fadgram-vue/node_modules/@vuepress/plugin-active-header-links/lib/client/config.js'
+import * as clientConfig15 from '/Users/user/Desktop/laravel-projects/fadgram-vue/node_modules/@vuepress/plugin-catalog/lib/client/config.js'
+import * as clientConfig16 from '/Users/user/Desktop/laravel-projects/fadgram-vue/node_modules/@vuepress/plugin-nprogress/lib/client/config.js'
+import * as clientConfig17 from '/Users/user/Desktop/laravel-projects/fadgram-vue/node_modules/@vuepress/plugin-redirect/lib/client/config.js'
+import * as clientConfig18 from '/Users/user/Desktop/laravel-projects/fadgram-vue/docs/.vuepress/.temp/theme-hope/config.js'
+import * as clientConfig19 from '/Users/user/Desktop/laravel-projects/fadgram-vue/docs/.vuepress/client.ts'
 
 export const clientConfigs = [
   clientConfig0,
@@ -38,4 +39,5 @@ export const clientConfigs = [
   clientConfig16,
   clientConfig17,
   clientConfig18,
+  clientConfig19,
 ].map((m) => m.default).filter(Boolean)

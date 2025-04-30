@@ -1,13 +1,7 @@
 import { viteBundler } from '@vuepress/bundler-vite'
-//import { defaultTheme } from '@vuepress/theme-default'
 import { hopeTheme } from 'vuepress-theme-hope'
 import { defineUserConfig } from 'vuepress'
 import { fileURLToPath, URL } from 'node:url'
-import { markdownTabPlugin } from '@vuepress/plugin-markdown-tab'
-//import { getDirname, path } from 'vuepress/utils'
-
-//import { markdownIncludePlugin } from '@vuepress/plugin-markdown-include'
-
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineUserConfig({
@@ -15,11 +9,21 @@ export default defineUserConfig({
   title: 'Fadgram Vue',
   description: 'Vue 3 components library with powerfull features compatible with tailwind css 4',
   pagePatterns: ['**/*.md', '!**/*.snippet.md', '!.vuepress', '!node_modules'],
+  head: [
+    [
+      'link',
+      {
+        href: '/fonts/poppins/style.css',
+        rel: 'stylesheet',
+      },
+    ],
+  ],
   theme: hopeTheme({
     logo: '/images/logo.png',
+    favicon: '/images/logo.png',
     externalLinkIcon: false,
     repo: 'talalalmrka/fadgram-vue',
-    pageInfo: ['Author', 'Category', 'Tag', 'ReadingTime'],
+    pageInfo: ['Author', 'Category', 'Tag'],
     markdown: {
       include: true,
       codeTabs: true,
@@ -145,12 +149,4 @@ export default defineUserConfig({
       },
     },
   }),
-  plugins: [
-    /*markdownTabPlugin({
-      codeTabs: true,
-      tabs: true,
-    }),*/
-    //markdownIncludePlugin({}),
-  ],
-  //theme: defaultTheme(),
 })
