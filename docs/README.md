@@ -1,10 +1,12 @@
 ---
 home: true
 icon: house
-title: Fadgram Vue
+title: Home
 heroImage: /images/logo.png
-bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
-bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
+# bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
+bgImage: /images/hero-light.svg
+# bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
+bgImageDark: /images/hero-dark.svg
 bgImageStyle:
   background-attachment: fixed
 heroText: Fadgram Vue
@@ -63,5 +65,5 @@ highlights:
         details: Style with Tailwind classes directly in usage.
 
 copyright: false
-footer: MIT Licensed | © 2025-present Fadgram UI
+footer: Copyrights reserved @ Fadgram Ui | 2025
 ---

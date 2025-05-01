@@ -1,109 +1,109 @@
 {
-  "hash": "57fd7d7c",
+  "hash": "ac25230f",
   "configHash": "58cfc0b9",
-  "lockfileHash": "ecac1087",
-  "browserHash": "0f33bc3c",
+  "lockfileHash": "b80ecf14",
+  "browserHash": "9eaf3242",
   "optimized": {
     "@vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "@vueuse_core.js",
-      "fileHash": "e04c44dd",
+      "fileHash": "d0884f37",
       "needsInterop": false
     },
     "@vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "@vue_devtools-api.js",
-      "fileHash": "ed589a09",
+      "fileHash": "1509e4ea",
       "needsInterop": false
     },
     "@vuepress/shared": {
       "src": "../../../../node_modules/@vuepress/shared/dist/index.js",
       "file": "@vuepress_shared.js",
-      "fileHash": "597fffd5",
+      "fileHash": "8652ca75",
       "needsInterop": false
     },
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "2d784a48",
+      "fileHash": "d46c28bb",
       "needsInterop": false
     },
     "vue-router": {
       "src": "../../../../node_modules/vue-router/dist/vue-router.esm-bundler.js",
       "file": "vue-router.js",
-      "fileHash": "9c8840f4",
+      "fileHash": "dbb13de9",
       "needsInterop": false
     },
     "@morev/vue-transitions": {
       "src": "../../../../node_modules/@morev/vue-transitions/dist/vue-transitions.js",
       "file": "@morev_vue-transitions.js",
-      "fileHash": "4557565a",
+      "fileHash": "c2230490",
       "needsInterop": false
     },
     "prismjs": {
       "src": "../../../../node_modules/prismjs/prism.js",
       "file": "prismjs.js",
-      "fileHash": "7f72b17d",
+      "fileHash": "86f9b83b",
       "needsInterop": true
     },
     "prismjs/components/prism-bash": {
       "src": "../../../../node_modules/prismjs/components/prism-bash.js",
       "file": "prismjs_components_prism-bash.js",
-      "fileHash": "22a4a2b9",
+      "fileHash": "f4a57ebb",
       "needsInterop": true
     },
     "prismjs/components/prism-javascript": {
       "src": "../../../../node_modules/prismjs/components/prism-javascript.js",
       "file": "prismjs_components_prism-javascript.js",
-      "fileHash": "0486c29f",
+      "fileHash": "0e404feb",
       "needsInterop": true
     },
     "prismjs/components/prism-json": {
       "src": "../../../../node_modules/prismjs/components/prism-json.js",
       "file": "prismjs_components_prism-json.js",
-      "fileHash": "5e56bb4a",
+      "fileHash": "a88d1095",
       "needsInterop": true
     },
     "prismjs/components/prism-liquid": {
       "src": "../../../../node_modules/prismjs/components/prism-liquid.js",
       "file": "prismjs_components_prism-liquid.js",
-      "fileHash": "61d1111e",
+      "fileHash": "12d98af7",
       "needsInterop": true
     },
     "prismjs/components/prism-markdown": {
       "src": "../../../../node_modules/prismjs/components/prism-markdown.js",
       "file": "prismjs_components_prism-markdown.js",
-      "fileHash": "dc3cd7bd",
+      "fileHash": "07e90a76",
       "needsInterop": true
     },
     "prismjs/components/prism-markup-templating": {
       "src": "../../../../node_modules/prismjs/components/prism-markup-templating.js",
       "file": "prismjs_components_prism-markup-templating.js",
-      "fileHash": "8c64213e",
+      "fileHash": "3c823abf",
       "needsInterop": true
     },
     "prismjs/components/prism-php": {
       "src": "../../../../node_modules/prismjs/components/prism-php.js",
       "file": "prismjs_components_prism-php.js",
-      "fileHash": "8f18dcc8",
+      "fileHash": "43524221",
       "needsInterop": true
     },
     "prismjs/components/prism-scss": {
       "src": "../../../../node_modules/prismjs/components/prism-scss.js",
       "file": "prismjs_components_prism-scss.js",
-      "fileHash": "d550d330",
+      "fileHash": "66005a5e",
       "needsInterop": true
     },
     "@vueuse/components": {
       "src": "../../../../node_modules/@vueuse/components/index.mjs",
       "file": "@vueuse_components.js",
-      "fileHash": "ead297cf",
+      "fileHash": "8adf7681",
       "needsInterop": false
     },
     "@iconify/vue": {
       "src": "../../../../node_modules/@iconify/vue/dist/iconify.mjs",
       "file": "@iconify_vue.js",
-      "fileHash": "b66b97dc",
+      "fileHash": "442483c4",
       "needsInterop": false
     }
   },

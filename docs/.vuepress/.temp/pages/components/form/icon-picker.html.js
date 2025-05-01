@@ -1,3 +1,16 @@
 import comp from "/Users/user/Desktop/laravel-projects/fadgram-vue/docs/.vuepress/.temp/pages/components/form/icon-picker.html.vue"
-const data = JSON.parse("{\"path\":\"/components/form/icon-picker.html\",\"title\":\"Icon Picker\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"createdTime\":1745964046000,\"updatedTime\":1745964046000,\"contributors\":[{\"name\":\"talalalmrka\",\"username\":\"talalalmrka\",\"email\":\"talalminfo@gmail.com\",\"commits\":1,\"url\":\"https://github.com/talalalmrka\"}]},\"readingTime\":{\"minutes\":1.01,\"words\":302},\"filePathRelative\":\"components/form/icon-picker.md\"}")
+const data = JSON.parse("{\"path\":\"/components/form/icon-picker.html\",\"title\":\"Icon Picker\",\"lang\":\"en-US\",\"frontmatter\":{\"next\":\"../accordion.md\"},\"readingTime\":{\"minutes\":1.01,\"words\":304},\"filePathRelative\":\"components/form/icon-picker.md\"}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

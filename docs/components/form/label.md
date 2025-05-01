@@ -1,3 +1,7 @@
+---
+prev: ../loader.md
+---
+
 # Label
 
 ## Props

@@ -1,3 +1,16 @@
 import comp from "/Users/user/Desktop/laravel-projects/fadgram-vue/docs/.vuepress/.temp/pages/components/form/input.html.vue"
-const data = JSON.parse("{\"path\":\"/components/form/input.html\",\"title\":\"Input\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"createdTime\":1745964046000,\"updatedTime\":1745964046000,\"contributors\":[{\"name\":\"talalalmrka\",\"username\":\"talalalmrka\",\"email\":\"talalminfo@gmail.com\",\"commits\":1,\"url\":\"https://github.com/talalalmrka\"}]},\"readingTime\":{\"minutes\":1.81,\"words\":542},\"filePathRelative\":\"components/form/input.md\"}")
+const data = JSON.parse("{\"path\":\"/components/form/input.html\",\"title\":\"Input\",\"lang\":\"en-US\",\"frontmatter\":{},\"readingTime\":{\"minutes\":1.81,\"words\":542},\"filePathRelative\":\"components/form/input.md\"}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

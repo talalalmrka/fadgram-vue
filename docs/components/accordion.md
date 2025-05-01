@@ -1,3 +1,7 @@
+---
+prev: ../components/form/icon-picker.md
+---
+
 # Accordion
 
 ## Installation

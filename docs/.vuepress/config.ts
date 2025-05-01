@@ -3,25 +3,17 @@ import { hopeTheme } from 'vuepress-theme-hope'
 import { defineUserConfig } from 'vuepress'
 import { fileURLToPath, URL } from 'node:url'
 import tailwindcss from '@tailwindcss/vite'
+import { themeSidebar } from './sidebar'
 
 export default defineUserConfig({
   lang: 'en-US',
   title: 'Fadgram Vue',
   description: 'Vue 3 components library with powerfull features compatible with tailwind css 4',
   pagePatterns: ['**/*.md', '!**/*.snippet.md', '!.vuepress', '!node_modules'],
-  base: '/fadgram-vue/', // 👈 VERY IMPORTANT
-  head: [
-    [
-      'link',
-      {
-        href: '/fonts/poppins/style.css',
-        rel: 'stylesheet',
-      },
-    ],
-  ],
+  base: '/fadgram-vue/',
   theme: hopeTheme({
     logo: '/images/logo.png',
-    favicon: '/images/logo.png',
+    favicon: '/images/favicon.ico',
     externalLinkIcon: false,
     repo: 'talalalmrka/fadgram-vue',
     pageInfo: ['Author', 'Category', 'Tag'],
@@ -30,16 +22,10 @@ export default defineUserConfig({
       codeTabs: true,
       tabs: true,
     },
-plugins:{
-    copyCode:{
-showInMobile: true,
-},
-},
-code: {
-      copy: {
-        showInMobile: true, // Force show copy button on mobile
-        duration: 2000,    // Success feedback duration (optional)
-      }
+    plugins: {
+      copyCode: {
+        showInMobile: true,
+      },
     },
     navbar: [
       {
@@ -50,10 +36,11 @@ code: {
       {
         text: 'Get started',
         icon: 'bi-lightbulb-fill',
-        link: '/get-started.md',
+        link: '/guide/introduction.md',
       },
     ],
-    sidebar: [
+    sidebar: themeSidebar,
+    /* sidebar: [
       {
         text: 'Get started',
         children: [
@@ -149,7 +136,7 @@ code: {
           },
         ],
       },
-    ],
+    ], */
   }),
   bundler: viteBundler({
     viteOptions: {

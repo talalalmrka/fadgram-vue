@@ -17,6 +17,7 @@ import FgRadio from './components/FgRadio.vue'
 import FgRichSelect from './components/FgRichSelect.vue'
 import FgSelect from './components/FgSelect.vue'
 import FgSwitch from './components/FgSwitch.vue'
+import FgTabs from './components/FgTabs.vue'
 import FgTextarea from './components/FgTextarea.vue'
 
 const components = [
@@ -38,6 +39,7 @@ const components = [
   FgRichSelect,
   FgSelect,
   FgSwitch,
+  FgTabs,
   FgTextarea,
 ]
 
@@ -74,5 +76,6 @@ export {
   FgRichSelect,
   FgSelect,
   FgSwitch,
+  FgTabs,
   FgTextarea,
 }
