@@ -1,3 +1,8 @@
+---
+title: Loader
+icon: arrow-repeat
+---
+
 <script setup lang="ts">
     import { ref } from 'vue';
     import { LOADER_TYPES } from '@/types';

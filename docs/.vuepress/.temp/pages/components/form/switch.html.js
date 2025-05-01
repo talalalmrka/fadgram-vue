@@ -1,16 +1,3 @@
 import comp from "/Users/user/Desktop/laravel-projects/fadgram-vue/docs/.vuepress/.temp/pages/components/form/switch.html.vue"
-const data = JSON.parse("{\"path\":\"/components/form/switch.html\",\"title\":\"Switch (Toggle)\",\"lang\":\"en-US\",\"frontmatter\":{},\"readingTime\":{\"minutes\":0.58,\"words\":174},\"filePathRelative\":\"components/form/switch.md\"}")
+const data = JSON.parse("{\"path\":\"/components/form/switch.html\",\"title\":\"Switch\",\"lang\":\"en-US\",\"frontmatter\":{\"title\":\"Switch\",\"icon\":\"toggle-on\",\"description\":\"Switch (Toggle) Props Emits Install Basic usage\",\"head\":[[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Switch\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2025-04-29T22:00:46.000Z\\\",\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"Talal Almrka\\\",\\\"email\\\":\\\"talalminfo@gmail.com\\\",\\\"url\\\":\\\"https://github.com/talalalmrka\\\"}]}\"],[\"meta\",{\"property\":\"og:url\",\"content\":\"https://talalalmrka.github.io/fadgram-vue/fadgram-vue/components/form/switch.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"Fadgram Vue\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Switch\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Switch (Toggle) Props Emits Install Basic usage\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"en-US\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2025-04-29T22:00:46.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2025-04-29T22:00:46.000Z\"}]]},\"git\":{\"createdTime\":1745964046000,\"updatedTime\":1745964046000,\"contributors\":[{\"name\":\"talalalmrka\",\"username\":\"talalalmrka\",\"email\":\"talalminfo@gmail.com\",\"commits\":1,\"url\":\"https://github.com/talalalmrka\"}]},\"readingTime\":{\"minutes\":0.6,\"words\":179},\"filePathRelative\":\"components/form/switch.md\",\"autoDesc\":true}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

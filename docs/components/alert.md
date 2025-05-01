@@ -1,3 +1,8 @@
+---
+title: Alert
+icon: info-square
+---
+
 <script setup lang="ts">
     const sizes = ['xxs', 'xs', 'sm', 'default', 'lg', 'xl', 'xxl'];
 </script>

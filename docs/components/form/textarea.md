@@ -1,3 +1,8 @@
+---
+title: Textarea
+icon: textarea-resize
+---
+
 # Textarea
 
 ## Props

@@ -1,21 +1,48 @@
+
 name: Deploy Docs
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+
+permissions:
+  contents: write
 
 jobs:
-  build:
+  deploy-gh-pages:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          version: 8
-      - run: pnpm install
-      - run: pnpm run docs:build
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+          fetch-depth: 0
+          # if your docs needs submodules, uncomment the following line
+          # submodules: true
+
+
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/.vuepress/dist
+          node-version: 22
+          cache: npm
+
+      - name: Install Deps
+        run: |
+          corepack enable
+          npm ci
+
+      - name: Build Docs
+        env:
+          NODE_OPTIONS: --max_old_space_size=8192
+        run: |-
+          npm run docs:build
+          > docs/.vuepress/dist/.nojekyll
+
+      - name: Deploy Docs
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          # Deploy Docs
+          branch: gh-pages
+          folder: docs/.vuepress/dist

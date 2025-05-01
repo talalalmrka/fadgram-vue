@@ -1,5 +1,6 @@
 ---
-next: ../accordion.md
+title: Icon Picker
+icon: palette
 ---
 
 <script setup lang="ts">

@@ -2,30 +2,26 @@
 home: true
 icon: house
 title: Home
-heroImage: /images/logo.png
-# bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
-bgImage: /images/hero-light.svg
-# bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
-bgImageDark: /images/hero-dark.svg
+heroImage: /logo.png
+bgImage: /assets/image/hero-light.svg
+bgImageDark: /assets/image/hero-dark.svg
 bgImageStyle:
   background-attachment: fixed
 heroText: Fadgram Vue
 tagline: A Vue 3 component library styled with Tailwind CSS – fast, modern, and developer-friendly.
+heroFullScreen: true
 actions:
   - text: Get started
-    icon: bi-lightbulb
-    link: ./get-started
+    icon: lightbulb
+    link: ./guide/introduction.md
     type: primary
 
   - text: Components
-    icon: bi-box-seam
-    link: ./components/accordion
-
+    icon: grid-1x2
+    link: ./components/
 highlights:
   - header: Why Fadgram Vue?
     image: /assets/image/box.svg
-    bgImage: https://theme-hope-assets.vuejs.press/bg/3-light.svg
-    bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
     highlights:
       - title: 🎯 Vue 3 + TypeScript
         details: Written in TypeScript and built for Vue 3 Composition API.
@@ -38,11 +34,13 @@ highlights:
       - title: 🧩 Growing Set of Components
         details: Includes accordion, icon picker, form controls, alerts, and more.
 
-  - header: Quick Start
-    description: Get started in seconds.
-    image: /assets/image/ui.svg
-    bgImage: https://theme-hope-assets.vuejs.press/bg/5-light.svg
-    bgImageDark: https://theme-hope-assets.vuejs.press/bg/5-dark.svg
+  - header: Quick Install
+    image: /assets/image/advanced.svg
+    bgImage: https://theme-hope-assets.vuejs.press/bg/2-light.svg
+    bgImageDark: https://theme-hope-assets.vuejs.press/bg/2-dark.svg
+    bgImageStyle:
+      background-repeat: repeat
+      background-size: initial
     highlights:
       - title: Install via NPM
         details: <code>npm install fadgram-vue</code>
@@ -53,7 +51,7 @@ highlights:
 
   - header: Fully Customizable
     description: Tailor components using props, slots, and Tailwind classes.
-    image: /assets/image/features.svg
+    image: /assets/image/layout.svg
     bgImage: https://theme-hope-assets.vuejs.press/bg/1-light.svg
     bgImageDark: https://theme-hope-assets.vuejs.press/bg/1-dark.svg
     highlights:
@@ -65,5 +63,5 @@ highlights:
         details: Style with Tailwind classes directly in usage.
 
 copyright: false
-footer: Copyrights reserved @ Fadgram Ui | 2025
+footer: Copyrights reserved @ <a href="https://talalalmrka.github.io/fadgram-ui-docs/" target="_blank">Fadgram UI</a> | 2025
 ---

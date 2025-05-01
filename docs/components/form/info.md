@@ -1,3 +1,8 @@
+---
+title: Info
+icon: info-circle
+---
+
 # Info
 
 ## Props

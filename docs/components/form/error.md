@@ -1,3 +1,8 @@
+---
+title: Error
+icon: exclamation-circle
+---
+
 # Error
 
 ## Props

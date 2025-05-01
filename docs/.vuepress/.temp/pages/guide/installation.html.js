@@ -1,16 +1,3 @@
 import comp from "/Users/user/Desktop/laravel-projects/fadgram-vue/docs/.vuepress/.temp/pages/guide/installation.html.vue"
-const data = JSON.parse("{\"path\":\"/guide/installation.html\",\"title\":\"Installation\",\"lang\":\"en-US\",\"frontmatter\":{\"next\":\"../components/form/label.md\"},\"readingTime\":{\"minutes\":0.68,\"words\":204},\"filePathRelative\":\"guide/installation.md\"}")
+const data = JSON.parse("{\"path\":\"/guide/installation.html\",\"title\":\"Installation\",\"lang\":\"en-US\",\"frontmatter\":{\"title\":\"Installation\",\"icon\":\"gear-wide-connected\",\"order\":2,\"next\":\"../components/accordion.md\",\"description\":\"Installation Usage Using as a Plugin When you use a library as a plugin, you register it globally in your Vue app. This makes all the components and functionality provided by th...\",\"head\":[[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Installation\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2025-05-01T17:04:11.000Z\\\",\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"Talal Almrka\\\",\\\"email\\\":\\\"talalminfo@gmail.com\\\",\\\"url\\\":\\\"https://github.com/talalalmrka\\\"}]}\"],[\"meta\",{\"property\":\"og:url\",\"content\":\"https://talalalmrka.github.io/fadgram-vue/fadgram-vue/guide/installation.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"Fadgram Vue\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Installation\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Installation Usage Using as a Plugin When you use a library as a plugin, you register it globally in your Vue app. This makes all the components and functionality provided by th...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"en-US\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2025-05-01T17:04:11.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2025-05-01T17:04:11.000Z\"}]]},\"git\":{\"createdTime\":1745964046000,\"updatedTime\":1746119051000,\"contributors\":[{\"name\":\"talalalmrka\",\"username\":\"talalalmrka\",\"email\":\"talalminfo@gmail.com\",\"commits\":3,\"url\":\"https://github.com/talalalmrka\"}]},\"readingTime\":{\"minutes\":0.71,\"words\":212},\"filePathRelative\":\"guide/installation.md\",\"autoDesc\":true}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

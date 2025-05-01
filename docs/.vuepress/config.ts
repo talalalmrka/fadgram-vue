@@ -1,143 +1,19 @@
-import { viteBundler } from '@vuepress/bundler-vite'
-import { hopeTheme } from 'vuepress-theme-hope'
 import { defineUserConfig } from 'vuepress'
+import { viteBundler } from '@vuepress/bundler-vite'
 import { fileURLToPath, URL } from 'node:url'
 import tailwindcss from '@tailwindcss/vite'
-import { themeSidebar } from './sidebar'
+import theme from './theme.js'
 
 export default defineUserConfig({
+  base: '/fadgram-vue/',
+
   lang: 'en-US',
   title: 'Fadgram Vue',
   description: 'Vue 3 components library with powerfull features compatible with tailwind css 4',
   pagePatterns: ['**/*.md', '!**/*.snippet.md', '!.vuepress', '!node_modules'],
-  base: '/fadgram-vue/',
-  theme: hopeTheme({
-    logo: '/images/logo.png',
-    favicon: '/images/favicon.ico',
-    externalLinkIcon: false,
-    repo: 'talalalmrka/fadgram-vue',
-    pageInfo: ['Author', 'Category', 'Tag'],
-    markdown: {
-      include: true,
-      codeTabs: true,
-      tabs: true,
-    },
-    plugins: {
-      copyCode: {
-        showInMobile: true,
-      },
-    },
-    navbar: [
-      {
-        text: 'Home',
-        icon: 'bi-house-fill',
-        link: '/',
-      },
-      {
-        text: 'Get started',
-        icon: 'bi-lightbulb-fill',
-        link: '/guide/introduction.md',
-      },
-    ],
-    sidebar: themeSidebar,
-    /* sidebar: [
-      {
-        text: 'Get started',
-        children: [
-          {
-            text: 'Introduction',
-            icon: 'bi-lightbulb-fill',
-            link: '/get-started',
-          },
-        ],
-      },
-      {
-        text: 'Components',
-        children: [
-          {
-            text: 'Accordion',
-            icon: 'bi-arrows-collapse',
-            link: '/components/accordion',
-          },
-          {
-            text: 'Alert',
-            icon: 'bi-info-square',
-            link: '/components/alert',
-          },
-          {
-            text: 'Icon',
-            icon: 'bi-emoji-smile-fill',
-            link: '/components/icon',
-          },
-          {
-            text: 'Loader',
-            icon: 'bi-arrow-repeat',
-            link: '/components/loader',
-          },
-        ],
-      },
-      {
-        text: 'Form',
-        children: [
-          {
-            text: 'Label',
-            icon: 'bi-tag',
-            link: '/components/form/label',
-          },
-          {
-            text: 'Error',
-            icon: 'bi-exclamation-circle',
-            link: '/components/form/error',
-          },
-          {
-            text: 'Info',
-            icon: 'bi-info-circle',
-            link: '/components/form/info',
-          },
-          {
-            text: 'Input',
-            icon: 'bi-input-cursor',
-            link: '/components/form/input',
-          },
-          {
-            text: 'Textarea',
-            icon: 'bi-textarea-resize',
-            link: '/components/form/textarea',
-          },
-          {
-            text: 'Select',
-            icon: 'bi-list',
-            link: '/components/form/select',
-          },
-          {
-            text: 'Rich select',
-            icon: 'bi-list-check',
-            link: '/components/form/rich-select',
-          },
-          {
-            text: 'Checkbox',
-            icon: 'bi-check-square',
-            link: '/components/form/checkbox',
-          },
-          {
-            text: 'Switch',
-            icon: 'bi-toggle-on',
-            link: '/components/form/switch',
-          },
-          {
-            text: 'Radio',
-            icon: 'bi-circle',
-            link: '/components/form/radio',
-          },
-          {
-            text: 'Icon Picker',
-            icon: 'bi-palette',
-            link: '/components/form/icon-picker',
-          },
-        ],
-      },
-    ], */
-  }),
+
+  theme,
+  //theme: hopeTheme({}),
   bundler: viteBundler({
     viteOptions: {
       base: '/fadgram-vue/',
@@ -149,4 +25,6 @@ export default defineUserConfig({
       },
     },
   }),
+  // Enable it with pwa
+  // shouldPrefetch: false,
 })

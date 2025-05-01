@@ -1,3 +1,8 @@
+---
+title: Radio
+icon: circle
+---
+
 <script setup lang="ts">
     import { ref } from 'vue';
     const country = ref('');

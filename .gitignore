@@ -36,3 +36,8 @@ coverage
 # VuePress default build output directory
 .vuepress/dist
 deb.deb
+
+node_modules/
+docs/.vuepress/.cache/
+docs/.vuepress/.temp/
+docs/.vuepress/dist/

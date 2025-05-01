@@ -1,3 +1,8 @@
+---
+title: Checkbox
+icon: check-square
+---
+
 <script setup lang="ts">
     import { ref } from 'vue';
     const agree = ref(false);

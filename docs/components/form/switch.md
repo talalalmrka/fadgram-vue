@@ -1,3 +1,8 @@
+---
+title: Switch
+icon: toggle-on
+---
+
 <script setup lang="ts">
     import { ref } from 'vue';
     const remember = ref(false);

@@ -11,7 +11,7 @@ export default {
         (props) =>
           h(VPIcon, {
             type: "iconify",
-            prefix: "",
+            prefix: "bi:",
             ...props,
           })
       )

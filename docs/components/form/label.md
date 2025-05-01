@@ -1,5 +1,6 @@
 ---
-prev: ../loader.md
+title: Label
+icon: tag
 ---
 
 # Label

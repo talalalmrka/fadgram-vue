@@ -1,16 +1,3 @@
 import comp from "/Users/user/Desktop/laravel-projects/fadgram-vue/docs/.vuepress/.temp/pages/components/form/index.html.vue"
-const data = JSON.parse("{\"path\":\"/components/form/\",\"title\":\"Form\",\"lang\":\"en-US\",\"frontmatter\":{\"title\":\"Form\",\"article\":false,\"feed\":false,\"sitemap\":false},\"readingTime\":{\"minutes\":0,\"words\":1},\"filePathRelative\":null}")
+const data = JSON.parse("{\"path\":\"/components/form/\",\"title\":\"Form\",\"lang\":\"en-US\",\"frontmatter\":{\"title\":\"Form\",\"index\":false,\"icon\":\"ui-checks-grid\",\"dir\":{\"text\":\"Form\",\"collapsable\":false,\"expanded\":true},\"category\":[\"Form\"],\"head\":[[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Form\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"Talal Almrka\\\",\\\"email\\\":\\\"talalminfo@gmail.com\\\",\\\"url\\\":\\\"https://github.com/talalalmrka\\\"}]}\"],[\"meta\",{\"property\":\"og:url\",\"content\":\"https://talalalmrka.github.io/fadgram-vue/fadgram-vue/components/form/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"Fadgram Vue\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Form\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"en-US\"}]]},\"git\":{},\"readingTime\":{\"minutes\":0.06,\"words\":19},\"filePathRelative\":\"components/form/README.md\"}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

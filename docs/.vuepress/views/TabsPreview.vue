@@ -34,5 +34,3 @@ const currentTab = ref(0)
         </template>
     </fg-tabs>
 </template>
-
-<style scoped></style>

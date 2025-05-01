@@ -1,3 +1,8 @@
+---
+title: Icon
+icon: emoji-smile
+---
+
 # Icon
 
 ## installation

@@ -1,3 +1,8 @@
+---
+title: Rich Select
+icon: list-check
+---
+
 <script setup lang="ts">
     import { ref } from 'vue';
     const options = ref([

@@ -1,16 +1,3 @@
 import comp from "/Users/user/Desktop/laravel-projects/fadgram-vue/docs/.vuepress/.temp/pages/components/form/radio.html.vue"
-const data = JSON.parse("{\"path\":\"/components/form/radio.html\",\"title\":\"Radio\",\"lang\":\"en-US\",\"frontmatter\":{},\"readingTime\":{\"minutes\":0.62,\"words\":185},\"filePathRelative\":\"components/form/radio.md\"}")
+const data = JSON.parse("{\"path\":\"/components/form/radio.html\",\"title\":\"Radio\",\"lang\":\"en-US\",\"frontmatter\":{\"title\":\"Radio\",\"icon\":\"circle\",\"description\":\"Radio Props Emits Install Basic usage\",\"head\":[[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Radio\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2025-04-29T22:00:46.000Z\\\",\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"Talal Almrka\\\",\\\"email\\\":\\\"talalminfo@gmail.com\\\",\\\"url\\\":\\\"https://github.com/talalalmrka\\\"}]}\"],[\"meta\",{\"property\":\"og:url\",\"content\":\"https://talalalmrka.github.io/fadgram-vue/fadgram-vue/components/form/radio.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"Fadgram Vue\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Radio\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Radio Props Emits Install Basic usage\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"en-US\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2025-04-29T22:00:46.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2025-04-29T22:00:46.000Z\"}]]},\"git\":{\"createdTime\":1745964046000,\"updatedTime\":1745964046000,\"contributors\":[{\"name\":\"talalalmrka\",\"username\":\"talalalmrka\",\"email\":\"talalminfo@gmail.com\",\"commits\":1,\"url\":\"https://github.com/talalalmrka\"}]},\"readingTime\":{\"minutes\":0.63,\"words\":189},\"filePathRelative\":\"components/form/radio.md\",\"autoDesc\":true}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

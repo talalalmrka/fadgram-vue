@@ -1,5 +1,7 @@
 ---
-prev: ../components/form/icon-picker.md
+title: Accordion
+icon: arrows-collapse
+prev: ../guide/installation.md
 ---
 
 # Accordion

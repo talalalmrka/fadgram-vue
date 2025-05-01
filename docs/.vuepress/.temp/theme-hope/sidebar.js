@@ -1,1 +1,1 @@
-export const sidebarData = {};
+export const sidebarData = {"/components/":["accordion","alert",{"text":"Form","prefix":"form/","collapsible":true,"expanded":true,"icon":"ui-checks-grid","children":["checkbox","error","icon-picker","info","input","label","radio","rich-select","select","switch","textarea"]},"icon","loader","tabs"]};
