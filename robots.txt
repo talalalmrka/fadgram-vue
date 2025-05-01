@@ -1,0 +1,5 @@
+
+User-agent:*
+Disallow:
+
+Sitemap: https://talalalmrka.github.io/fadgram-vue/fadgram-vue/sitemap.xml
