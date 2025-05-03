@@ -23,11 +23,15 @@ export default hopeTheme({
   lastUpdated: false,
   editLink: false,
   // navbar
-  //navbar,
+  navbar,
   navbarLayout: {
     start: ['Brand'],
     center: ['Search'],
-    end: ['Repo', 'ColorModeSwitch', 'Outlook'],
+    end: [
+      'Repo',
+      //'ColorModeSwitch',
+      'Outlook',
+    ],
   },
   // sidebar
   sidebar,

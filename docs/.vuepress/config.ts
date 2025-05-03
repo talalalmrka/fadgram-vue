@@ -10,9 +10,7 @@ export default defineUserConfig({
   title: 'Fadgram Vue',
   description: 'Vue 3 components library with powerfull features compatible with tailwind css 4',
   pagePatterns: ['**/*.md', '!**/*.snippet.md', '!.vuepress', '!node_modules'],
-
   theme,
-  //theme: hopeTheme({}),
   bundler: viteBundler({
     viteOptions: {
       base: '/fadgram-vue/',
@@ -20,6 +18,12 @@ export default defineUserConfig({
       resolve: {
         alias: {
           '@': fileURLToPath(new URL('../../src', import.meta.url)),
+        },
+      },
+      server: {
+        cors: true,
+        watch: {
+          interval: 500,
         },
       },
     },

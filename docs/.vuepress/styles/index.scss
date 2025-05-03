@@ -1,0 +1,54 @@
+.vp-navbar {
+  transition: all 0.3s ease;
+}
+.hero-fullscreen .vp-hero-slide-down-button {
+  @apply absolute bottom-8 animate-bounce;
+}
+.theme-container.no-sidebar {
+  .vp-project-home {
+    padding-top: 0 !important;
+    .vp-hero-info-wrapper.hero-fullscreen {
+      height: 100vh !important;
+    }
+  }
+  .vp-navbar {
+    background: transparent !important;
+    box-shadow: none !important;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    // Navbar items color
+    .nav-link,
+    .title,
+    .toggle-button {
+      color: var(--white) !important;
+    }
+  }
+
+  // Scrolled state
+  .vp-navbar.scrolled {
+    background: var(--navbar-c-bg) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.4s ease;
+    -webkit-backdrop-filter: saturate(150%) blur(12px) !important;
+    backdrop-filter: saturate(150%) blur(12px) !important;
+    // Revert text color when scrolled
+    .nav-link,
+    .title,
+    .toggle-button {
+      color: var(--text-color) !important;
+    }
+  }
+}
+
+.DocSearch .DocSearch-Button-Key {
+  background: transparent !important;
+  box-shadow: none;
+  width: auto !important;
+  height: auto !important;
+  padding: 0 !important;
+}
+@media (max-width: 719px) {
+  .vp-nav-item.hide-in-mobile {
+    display: block !important;
+  }
+}

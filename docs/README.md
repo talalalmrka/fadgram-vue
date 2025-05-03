@@ -3,10 +3,8 @@ home: true
 icon: house
 title: Home
 heroImage: /logo.png
-# bgImage: /assets/image/hero-light.svg
-bgImage: /assets/image/gpt-light.png
-# bgImageDark: /assets/image/hero-dark.svg
-bgImageDark: /assets/image/gpt.jpg
+bgImage: /assets/image/hero-light.webp
+bgImageDark: /assets/image/hero-dark.webp
 bgImageStyle:
   background-attachment: fixed
 heroText: Fadgram Vue
