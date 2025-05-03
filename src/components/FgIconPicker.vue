@@ -2,7 +2,10 @@
 import { ref, computed, watch, onMounted } from 'vue';
 import { vOnClickOutside } from '@vueuse/components'
 import { Icon } from '@iconify/vue';
-import { FgLabel, FgIcon, FgError, FgInfo } from './';
+import FgLabel from './FgLabel.vue';
+import FgIcon from './FgIcon.vue';
+import FgError from './FgError.vue';
+import FgInfo from './FgInfo.vue';
 import biIcons from '@iconify-json/bi/icons.json';
 
 // Static data outside the component to avoid re-computation
@@ -56,7 +59,8 @@ const input = ref<HTMLInputElement | null>(null);
 
 // Debounced search term
 const debouncedSearchTerm = ref('');
-let searchTimeout: number;
+//let searchTimeout: number;
+let searchTimeout: ReturnType<typeof setTimeout>;
 
 watch(searchTerm, (newVal) => {
     clearTimeout(searchTimeout);

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, provide, onMounted, watch } from 'vue';
-import { AccordionContextKey, type AccordionContext } from '../types/fg-accordion.ts';
+import { AccordionContextKey, type AccordionContext } from '../types/fg-accordion';
 
 let idCounter = 0;
 function generateId() {
