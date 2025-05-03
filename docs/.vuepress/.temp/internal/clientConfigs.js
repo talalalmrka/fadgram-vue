@@ -16,7 +16,7 @@ import * as clientConfig14 from '/Users/user/Desktop/laravel-projects/fadgram-vu
 import * as clientConfig15 from '/Users/user/Desktop/laravel-projects/fadgram-vue/node_modules/@vuepress/plugin-active-header-links/lib/client/config.js'
 import * as clientConfig16 from '/Users/user/Desktop/laravel-projects/fadgram-vue/node_modules/@vuepress/plugin-catalog/lib/client/config.js'
 import * as clientConfig17 from '/Users/user/Desktop/laravel-projects/fadgram-vue/node_modules/@vuepress/plugin-nprogress/lib/client/config.js'
-import * as clientConfig18 from '/Users/user/Desktop/laravel-projects/fadgram-vue/docs/.vuepress/.temp/docsearch/config.js'
+import * as clientConfig18 from '/Users/user/Desktop/laravel-projects/fadgram-vue/node_modules/@vuepress/plugin-search/lib/client/config.js'
 import * as clientConfig19 from '/Users/user/Desktop/laravel-projects/fadgram-vue/node_modules/@vuepress/plugin-redirect/lib/client/config.js'
 import * as clientConfig20 from '/Users/user/Desktop/laravel-projects/fadgram-vue/docs/.vuepress/.temp/theme-hope/config.js'
 import * as clientConfig21 from '/Users/user/Desktop/laravel-projects/fadgram-vue/docs/.vuepress/client.ts'

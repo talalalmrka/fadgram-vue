@@ -130,11 +130,12 @@ export default hopeTheme({
     copyCode: {
       showInMobile: true,
     },
-    docsearch: {
+    search: true,
+    /* docsearch: {
       appId: 'EASLZ50AQS',
-      apiKey: '77dec93712c7df375029d5edadbc7e74',
+      apiKey: '2e9cb7ac7178a97a731cd2a4966a650b',
       indexName: 'talalalmrkaio',
-    },
+    }, */
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.
     /* comment: {
