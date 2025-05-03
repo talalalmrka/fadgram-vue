@@ -24,6 +24,13 @@
   "main": "dist/fadgram-vue.umd.js",
   "module": "dist/fadgram-vue.es.js",
   "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/fadgram-vue.es.js",
+      "require": "./dist/fadgram-vue.umd.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
   "files": [
     "dist",
     "types",
