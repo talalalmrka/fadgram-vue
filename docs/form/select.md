@@ -5,26 +5,27 @@ icon: list
 
 <script setup lang="ts">
     import { ref } from 'vue';
+    const aiModel = ref('');
     const options = ref([
         {
-            label: "Gpt",
+            label: 'Gpt',
             value: 'gpt',
         },
         {
-            label:"Copilot",
+            label:'Copilot',
             value: 'copilot',
         },
         {
-            label: "Gemini",
+            label: 'Gemini',
             value: 'gemini'
         },
         {
-            label: "Grok",
+            label: 'Grok',
             value: 'grok',
         },
     ]);
 
-    const aiModel = ref('');
+    
 </script>
 
 # Select
@@ -66,24 +67,29 @@ import { FgSelect } from 'fadgram-vue'
 @tab vue
 
 ```vue
-<fg-select v-model="aiModel" label="AI model" placeholder="Select your model" :options="[
+<fg-select
+  v-model="aiModel"
+  label="AI model"
+  placeholder="Select your model"
+  :options="[
     {
-        label: "Gpt",
-        value: 'gpt',
+      label: 'Gpt',
+      value: 'gpt',
     },
     {
-        label: "Copilot",
-        value: 'copilot',
+      label: 'Copilot',
+      value: 'copilot',
     },
     {
-        label: "Gemini",
-        value: 'gemini',
+      label: 'Gemini',
+      value: 'gemini',
     },
     {
-        label: "Grok",
-        value: 'grok',
+      label: 'Grok',
+      value: 'grok',
     },
-]"/>
+  ]"
+/>
 ```
 
 :::
