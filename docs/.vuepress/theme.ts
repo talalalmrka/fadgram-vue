@@ -89,12 +89,6 @@ export default hopeTheme({
     highlighter: {
       type: 'prismjs',
       theme: 'vsc-dark-plus',
-      //theme: 'nord',
-      //theme: 'github-dark-high-contrast',
-      // type: 'prismjs',
-      // lineNumbers: true,
-      //theme: 'one-dark',
-      // type: 'prismjs',
     },
     // uncomment these if you need TeX support
     // math: {
@@ -135,7 +129,6 @@ export default hopeTheme({
   plugins: {
     copyCode: {
       showInMobile: true,
-      duration: 20000,
     },
     docsearch: {
       appId: 'EASLZ50AQS',
