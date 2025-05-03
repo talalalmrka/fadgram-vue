@@ -6,7 +6,6 @@ import theme from './theme.js'
 
 export default defineUserConfig({
   base: '/fadgram-vue/',
-
   lang: 'en-US',
   title: 'Fadgram Vue',
   description: 'Vue 3 components library with powerfull features compatible with tailwind css 4',

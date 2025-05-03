@@ -1,7 +1,6 @@
 ---
 title: Accordion
 icon: arrows-collapse
-prev: ../guide/installation.md
 ---
 
 # Accordion
@@ -69,26 +68,30 @@ import { FgAccordion, FgAccordionItem, FgAccordionHead, FgAccordionBody } from '
 ```vue
 <fg-accordion>
   <fg-accordion-item>
-    <fg-accordion-head> Broadcast </fg-accordion-head>
+    <fg-accordion-head>
+      Broadcast
+    </fg-accordion-head>
     <fg-accordion-body>
-      Broadcasting allows you to share live updates with your audience in real-time. Engage with
-      your viewers through interactive and dynamic content delivery.
+        Broadcasting allows you to share live updates with your audience in real-time.
+        Engage with your viewers through interactive and dynamic content delivery.
     </fg-accordion-body>
   </fg-accordion-item>
   <fg-accordion-item>
-    <fg-accordion-head> Coding </fg-accordion-head>
+    <fg-accordion-head>
+        Coding
+    </fg-accordion-head>
     <fg-accordion-body>
-      Coding is the process of creating instructions for computers using programming languages. It
-      enables the development of software, websites, and applications that power modern technology.
-      Explore the world of coding to unlock endless possibilities and bring your ideas to life.
+        Coding is the process of creating instructions for computers using programming languages. It enables the development of software, websites, and applications that power modern technology.
+        Explore the world of coding to unlock endless possibilities and bring your ideas to life.
     </fg-accordion-body>
   </fg-accordion-item>
   <fg-accordion-item>
-    <fg-accordion-head> Livestream </fg-accordion-head>
+    <fg-accordion-head>
+        Livestream
+    </fg-accordion-head>
     <fg-accordion-body>
-      Livestreaming is a powerful way to connect with your audience in real-time, enabling
-      interactive and engaging experiences. Share your moments, events, or tutorials live and build
-      a stronger connection with your viewers.
+        Livestreaming is a powerful way to connect with your audience in real-time, enabling interactive and engaging experiences.
+        Share your moments, events, or tutorials live and build a stronger connection with your viewers.
     </fg-accordion-body>
   </fg-accordion-item>
 </fg-accordion>

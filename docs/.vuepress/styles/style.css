@@ -95,12 +95,26 @@ svg.icon {
 .link {
   @apply text-primary;
 }
+.vp-sidebar-header {
+  @apply flex-space-2;
+  .vp-sidebar-title,
+  .vp-icon {
+    @apply text-sm text-gray-400;
+  }
+}
+.vp-sidebar-link {
+  @apply px-3 py-2;
+  @apply rounded-full;
+  @apply text-sm;
+}
+
 .vp-sidebar-links,
 .vp-sidebar-group {
   @apply space-y-2;
 }
-.vp-sidebar-header {
-  @apply mb-2;
+
+.vp-sidebar-title {
+  @apply text-inherit;
 }
 @layer components {
   .tabs {
@@ -148,6 +162,64 @@ svg.icon {
     [role='tabpanel'] {
       @apply px-3 py-2;
       @apply rounded-b-lg;
+    }
+  }
+}
+.vp-nav-item > .auto-link:hover::before,
+.vp-nav-item > .auto-link.route-link-active::before {
+  inset: auto 0 0;
+  visibility: hidden;
+}
+.vp-project-home {
+  padding-top: 0 !important;
+  .vp-hero-info-wrapper.hero-fullscreen {
+    height: 100vh !important;
+  }
+}
+.theme-container.no-sidebar .vp-navbar {
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  color: #fff !important;
+}
+.hero-fullscreen .vp-hero-slide-down-button {
+  @apply absolute bottom-8 animate-bounce;
+}
+
+pre {
+  font-size: 0.875rem !important;
+}
+div[class*='language-'].line-numbers-mode pre {
+  code {
+    margin-top: 30px !important;
+    border-top: 0.5px solid var(--color-gray-700);
+  }
+}
+.vp-copy-code-button {
+  opacity: 1 !important;
+  font-size: 0.875rem !important;
+  width: auto !important;
+  height: auto !important;
+  &::before {
+    font-size: 1rem !important;
+  }
+  &::after {
+    font-size: 0.75rem !important;
+    padding: 0 !important;
+  }
+}
+div[class*='language-'] {
+  &::before {
+    content: attr(data-ext) !important;
+    left: 5em;
+    right: auto;
+    z-index: 3;
+    font-size: 0.75rem;
+    opacity: 1 !important;
+  }
+  &:hover {
+    &::before {
+      content: 'hover';
     }
   }
 }

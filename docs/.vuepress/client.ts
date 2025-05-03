@@ -4,10 +4,12 @@ import FadgramVue from '../../src'
 import './styles/fonts/poppins/style.css'
 import './styles/style.css'
 import TabsPreview from './views/TabsPreview.vue'
+import DarkModeToggle from './components/DarkModeToggle.vue'
 export default defineClientConfig({
   enhance({ app }) {
     app.use(FadgramVue)
     app.component('TabsPreview', TabsPreview)
+    app.component('DarkModeToggle', DarkModeToggle)
   },
   setup() {},
   rootComponents: [],

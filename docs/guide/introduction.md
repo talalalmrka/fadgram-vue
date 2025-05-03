@@ -1,7 +1,6 @@
 ---
 title: Introduction
 icon: stars
-order: 1
 ---
 
 # Introduction

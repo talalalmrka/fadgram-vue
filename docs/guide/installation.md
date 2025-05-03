@@ -1,8 +1,8 @@
 ---
 title: Installation
 icon: gear-wide-connected
-order: 2
-next: ../components/accordion.md
+# order: 2
+# next: ../components/accordion.md
 ---
 
 # Installation

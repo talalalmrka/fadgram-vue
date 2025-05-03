@@ -3,14 +3,9 @@ import { navbar } from 'vuepress-theme-hope'
 export default navbar([
   '/',
   {
-    text: 'Guide',
+    text: 'Get started',
     icon: 'lightbulb',
     prefix: '/guide/',
     children: ['introduction', 'installation'],
-  },
-  {
-    text: 'Components',
-    icon: 'grid-1x2',
-    link: '/components/',
   },
 ])

@@ -1,16 +1,16 @@
 import { hopeTheme } from 'vuepress-theme-hope'
 
-import navbar from './navbar.js'
-import sidebar from './sidebar.js'
+import navbar from './navbar'
+import sidebar from './sidebar'
 
 export default hopeTheme({
   hostname: 'https://talalalmrka.github.io/fadgram-vue/',
-
+  /* 
   author: {
     name: 'Talal Almrka',
     email: 'talalminfo@gmail.com',
     url: 'https://github.com/talalalmrka',
-  },
+  }, */
   license: 'MIT',
   logo: '/logo.png',
   favicon: '/favicon.ico',
@@ -18,11 +18,17 @@ export default hopeTheme({
   repo: 'talalalmrka/fadgram-vue',
   pageInfo: ['Author', 'Category', 'Tag'],
   docsDir: 'src',
-
   darkmode: 'toggle',
+  contributors: false,
+  lastUpdated: false,
+  editLink: false,
   // navbar
-  navbar,
-
+  //navbar,
+  navbarLayout: {
+    start: ['Brand'],
+    center: ['Search'],
+    end: ['Repo', 'ColorModeSwitch', 'Outlook'],
+  },
   // sidebar
   sidebar,
 
@@ -76,7 +82,16 @@ export default hopeTheme({
     tabs: true,
     tasklist: true,
     vPre: true,
-
+    highlighter: {
+      type: 'prismjs',
+      theme: 'vsc-dark-plus',
+      //theme: 'nord',
+      //theme: 'github-dark-high-contrast',
+      // type: 'prismjs',
+      // lineNumbers: true,
+      //theme: 'one-dark',
+      // type: 'prismjs',
+    },
     // uncomment these if you need TeX support
     // math: {
     //   // install katex before enabling it
@@ -114,6 +129,15 @@ export default hopeTheme({
   },
 
   plugins: {
+    copyCode: {
+      showInMobile: true,
+      duration: 20000,
+    },
+    docsearch: {
+      appId: 'EASLZ50AQS',
+      apiKey: '77dec93712c7df375029d5edadbc7e74',
+      indexName: 'talalalmrkaio',
+    },
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.
     /* comment: {
