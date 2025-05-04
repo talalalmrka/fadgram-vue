@@ -4,6 +4,7 @@ import FgAccordionBody from './components/FgAccordionBody.vue'
 import FgAccordionHead from './components/FgAccordionHead.vue'
 import FgAccordionItem from './components/FgAccordionItem.vue'
 import FgAlert from './components/FgAlert.vue'
+import FgCard from './components/FgCard.vue'
 import FgCheckbox from './components/FgCheckbox.vue'
 import FgCode from './components/FgCode.vue'
 import FgError from './components/FgError.vue'
@@ -19,6 +20,7 @@ import FgSelect from './components/FgSelect.vue'
 import FgSwitch from './components/FgSwitch.vue'
 import FgTabs from './components/FgTabs.vue'
 import FgTextarea from './components/FgTextarea.vue'
+import { TransitionExpand, TransitionScale, TransitionSlide } from '@morev/vue-transitions'
 
 const components = [
   FgAccordion,
@@ -26,6 +28,7 @@ const components = [
   FgAccordionHead,
   FgAccordionItem,
   FgAlert,
+  FgCard,
   FgCheckbox,
   FgCode,
   FgError,
@@ -45,6 +48,9 @@ const components = [
 
 const FadgramVue = {
   install(app: App) {
+    app.component('TransitionExpand', TransitionExpand)
+    app.component('TransitionScale', TransitionScale)
+    app.component('TransitionSlide', TransitionSlide)
     components.forEach((component) => {
       if (component.__name) {
         app.component(component.__name, component)
@@ -63,6 +69,7 @@ export {
   FgAccordionHead,
   FgAccordionItem,
   FgAlert,
+  FgCard,
   FgCheckbox,
   FgCode,
   FgError,

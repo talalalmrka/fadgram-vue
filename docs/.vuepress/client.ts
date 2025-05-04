@@ -1,14 +1,14 @@
 import { defineClientConfig } from 'vuepress/client'
 import { nextTick } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { plugin as vueTransitionsPlugin } from '@morev/vue-transitions'
+//import { plugin as vueTransitionsPlugin } from '@morev/vue-transitions'
 import '@morev/vue-transitions/styles'
 import FadgramVue from '../../src'
 import './styles/style.css'
 import TabsPreview from './views/TabsPreview.vue'
 export default defineClientConfig({
   enhance({ app }) {
-    app.use(vueTransitionsPlugin())
+    //app.use(vueTransitionsPlugin())
     app.use(FadgramVue)
     app.component('TabsPreview', TabsPreview)
     app.config.globalProperties.$inputSizes = ['xs', 'sm', 'lg', 'xl', 'xxl']
