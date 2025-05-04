@@ -12,7 +12,7 @@ export default hopeTheme({
     url: 'https://github.com/talalalmrka',
   }, */
   license: 'MIT',
-  logo: '/logo.png',
+  logo: '/logo.webp',
   favicon: '/favicon.ico',
   externalLinkIcon: false,
   repo: 'talalalmrka/fadgram-vue',
