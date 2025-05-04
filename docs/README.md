@@ -2,7 +2,7 @@
 home: true
 icon: house
 title: Home
-heroImage: /logo.png
+heroImage: /logo.webp
 bgImage: /assets/image/hero-light.webp
 bgImageDark: /assets/image/hero-dark.webp
 bgImageStyle:
@@ -15,10 +15,6 @@ actions:
     icon: lightbulb
     link: ./guide/introduction.md
     type: primary
-
-  - text: Components
-    icon: grid-1x2
-    link: ./components/
 highlights:
   - header: Why Fadgram Vue?
     image: /assets/image/box.svg
