@@ -35,16 +35,14 @@ function update(val: string | number | null) {
 }
 </script>
 <template>
-  <div class="mb-4">
-    <FgLabel :icon="icon" :label="label" :error="error" :for="selectId" />
-    <select ref="selectRef" v-bind="$attrs" :id="selectId" v-model="innerValue" class="form-select"
-      :class="error ? 'error' : ''" @change="update(($event.target as HTMLInputElement).value)">
-      <option v-if="placeholder" value="">{{ placeholder }}</option>
-      <option v-for="opt in options" :key="opt.value" :value="opt.value" :disabled="opt.disabled">
-        <i v-if="opt.icon" class="icon" :class="opt.icon"></i> {{ opt.label }}
-      </option>
-    </select>
-    <FgInfo :info="info" />
-    <FgError :error="error" />
-  </div>
+  <FgLabel :icon="icon" :label="label" :error="error" :for="selectId" />
+  <select ref="selectRef" v-bind="$attrs" :id="selectId" v-model="innerValue" class="form-select"
+    :class="error ? 'error' : ''" @change="update(($event.target as HTMLInputElement).value)">
+    <option v-if="placeholder" value="">{{ placeholder }}</option>
+    <option v-for="opt in options" :key="opt.value" :value="opt.value" :disabled="opt.disabled">
+      <i v-if="opt.icon" class="icon" :class="opt.icon"></i> {{ opt.label }}
+    </option>
+  </select>
+  <FgInfo :info="info" />
+  <FgError :error="error" />
 </template>
