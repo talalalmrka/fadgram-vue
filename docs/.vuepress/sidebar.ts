@@ -26,7 +26,7 @@ export default sidebar([
   {
     text: 'Ui',
     prefix: 'ui/',
-    children: ['accordion', 'alert', 'icon', 'loader', 'tabs', 'card'],
+    children: ['accordion', 'alert', 'badge', 'button', 'card', 'icon', 'loader', 'tabs'],
   },
   /* {
     text: 'Getting started',

@@ -7,13 +7,6 @@ icon: input-cursor
     import { ref } from 'vue'
     const username = ref('')
     const url = ref('')
-    const inputSizes = ref([
-        'xs',
-        'sm',
-        'lg',
-        'xl',
-        'xxl',
-    ])
 </script>
 
 # Input
@@ -185,7 +178,7 @@ username: {{ username }}
 @tab:active Preview
 
 <div class="space-y-2">
-<fg-input v-for="size in inputSizes" type="text" :size="size" :placeholder="size"/>
+<fg-input v-for="size in $sizes" type="text" :size="size" :placeholder="size"/>
 </div>
 
 @tab vue

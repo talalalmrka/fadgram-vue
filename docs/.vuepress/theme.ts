@@ -16,31 +16,31 @@ export default hopeTheme({
   favicon: '/favicon.ico',
   externalLinkIcon: false,
   repo: 'talalalmrka/fadgram-vue',
-  pageInfo: ['Author', 'Category', 'Tag'],
+  pageInfo: ['Word', 'ReadingTime'],
   docsDir: 'src',
   darkmode: 'toggle',
   contributors: false,
   lastUpdated: false,
   editLink: false,
+  hotReload: true,
+  //pure: true,
+  //focus: false,
+  //changelog: true,
   // navbar
   navbar,
   navbarLayout: {
     start: ['Brand'],
     center: ['Search'],
-    end: [
-      'Repo',
-      //'ColorModeSwitch',
-      'Outlook',
-    ],
+    end: ['Repo', 'Outlook'],
   },
   // sidebar
   sidebar,
 
   //footer: 'Default footer',
-
-  displayFooter: true,
-
-  encrypt: {
+  navbarAutoHide: 'none',
+  displayFooter: false,
+  breadcrumbIcon: false,
+  /* encrypt: {
     config: {
       '/demo/encrypt.html': {
         hint: 'Password: 1234',
@@ -51,7 +51,7 @@ export default hopeTheme({
 
   metaLocales: {
     editLink: 'Edit this page on GitHub',
-  },
+  }, */
 
   // These features are enabled for demo, only preserve features you need here
   markdown: {

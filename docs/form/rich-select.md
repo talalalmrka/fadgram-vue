@@ -102,7 +102,7 @@ import { FgRichSelect } from 'fadgram-vue'
 
 ::: tabs
 @tab:active Preview
-<fg-rich-select v-for="size in $inputSizes" :key="size" :size="size" v-model="aiModel" :label="size" placeholder="Select your model" :options="options"/>
+<fg-rich-select v-for="size in $sizes" :key="size" :size="size" v-model="aiModel" :label="size" placeholder="Select your model" :options="options"/>
 @tab vue
 
 ```vue

@@ -47,14 +47,6 @@
   tfoot {
     @apply rounded-b;
   }
-
-  tbody {
-    tr {
-    }
-  }
-  tr {
-    /*@apply border-b border-gray-300 dark:border-gray-700;*/
-  }
   th,
   td {
     padding: calc(var(--spacing) * 1) !important;
@@ -67,10 +59,6 @@
       border-color: var(--color-gray-600) !important;
     }
   }
-  /* tbody tr:nth-of-type(even) {
-    @apply bg-gray-100 dark:bg-gray-800;
-    @apply border border-gray-300 dark:border-gray-700 border-collapse;
-  } */
 }
 
 .vp-nav-logo {
@@ -217,4 +205,15 @@ div[class*='language-'] {
     font-size: 0.75rem !important;
     padding: 0 !important;
   }
+}
+
+.search-box {
+  @apply relative;
+  .suggestions {
+    @apply absolute top-full mt-2 start-1/2 -translate-x-1/2;
+    @apply text-sm;
+  }
+}
+.vp-hero-actions {
+  @apply flex justify-center;
 }

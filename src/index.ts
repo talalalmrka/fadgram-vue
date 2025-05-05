@@ -4,6 +4,8 @@ import FgAccordionBody from './components/FgAccordionBody.vue'
 import FgAccordionHead from './components/FgAccordionHead.vue'
 import FgAccordionItem from './components/FgAccordionItem.vue'
 import FgAlert from './components/FgAlert.vue'
+import FgBadge from './components/FgBadge.vue'
+import FgButton from './components/FgButton.vue'
 import FgCard from './components/FgCard.vue'
 import FgCheckbox from './components/FgCheckbox.vue'
 import FgCode from './components/FgCode.vue'
@@ -28,6 +30,8 @@ const components = [
   FgAccordionHead,
   FgAccordionItem,
   FgAlert,
+  FgBadge,
+  FgButton,
   FgCard,
   FgCheckbox,
   FgCode,
@@ -69,6 +73,8 @@ export {
   FgAccordionHead,
   FgAccordionItem,
   FgAlert,
+  FgBadge,
+  FgButton,
   FgCard,
   FgCheckbox,
   FgCode,

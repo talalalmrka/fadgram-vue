@@ -3,8 +3,6 @@ import { Layout, NotFound, injectDarkMode, setupDarkMode, setupSidebarItems, scr
 import { defineCatalogInfoGetter } from "/Users/user/Desktop/laravel-projects/fadgram-vue/node_modules/@vuepress/plugin-catalog/lib/client/index.js"
 import { h } from "vue"
 import { resolveComponent } from "vue"
-import { GlobalEncrypt, LocalEncrypt } from "/Users/user/Desktop/laravel-projects/fadgram-vue/node_modules/vuepress-theme-hope/lib/bundle/modules/encrypt/export.js";
-import "/Users/user/Desktop/laravel-projects/fadgram-vue/node_modules/vuepress-theme-hope/lib/bundle/modules/encrypt/styles/all.scss"
 
 import "/Users/user/Desktop/laravel-projects/fadgram-vue/node_modules/@vuepress/helper/lib/client/styles/colors.css";
 import "/Users/user/Desktop/laravel-projects/fadgram-vue/node_modules/@vuepress/helper/lib/client/styles/normalize.css";
@@ -37,8 +35,7 @@ export default {
     // inject global properties
     injectDarkMode(app);
 
-    app.component("GlobalEncrypt", GlobalEncrypt);
-    app.component("LocalEncrypt", LocalEncrypt);
+
   },
   setup: () => {
     setupDarkMode();
