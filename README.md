@@ -1,6 +1,6 @@
 # 📦 Fadgram Vue
 
-## Fadgram Vue is a comprehensive Vue 3 components package designed to streamline your development process
+Fadgram Vue is a comprehensive Vue 3 components package designed to streamline your development process
 
 [![Fadgram vue](https://github.com/user-attachments/assets/e1915477-a38e-46b5-98c3-add4863aad09)](https://talalalmrka.github.io/fadgram-vue 'Fadgram Vue')
 

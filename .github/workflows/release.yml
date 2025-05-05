@@ -32,6 +32,12 @@ jobs:
           corepack enable
           npm ci
 
+      - name: Configure npm auth
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       - name: Build package
         env:
           NODE_OPTIONS: --max_old_space_size=8192
